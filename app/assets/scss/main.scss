@@ -1,0 +1,13 @@
+html, body, .container-wrapper, .sidebar {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container-wrapper {
+  min-width: 1100px;
+  max-width: 1415px;
+  margin: auto;
+}
