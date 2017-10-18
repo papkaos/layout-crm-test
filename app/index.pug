@@ -2,12 +2,13 @@
    Created by Александр on 17.10.2017.
 
 doctype html
-html(lang="en", ng-app="app")
+html(lang="en")
   head
     meta(charset="UTF-8")
     title CRM test
     link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic")
-    link(rel="stylesheet", href="app.css")
+    link(rel="stylesheet", href="assets/app.css")
+    script(src="https://use.fontawesome.com/9200e1cb11.js")
   body
     div.container-wrapper
       aside.sidebar
@@ -17,11 +18,35 @@ html(lang="en", ng-app="app")
         nav.menu
           ul.menu__list
             li.menu__item
-              a.menu__wrapper(href="#") Dashboard
+              a.menu__wrapper(href="#")
+                div.menu__icon
+                  i.fa.fa-tachometer(aria-hidden="true")
+                div.menu__text Dashboard
             li.menu__item
-              a.menu__wrapper(href="#") Reports
+              a.menu__wrapper(href="#")
+                div.menu__icon
+                  i.fa.fa-pie-chart(aria-hidden="true")
+                div.menu__text Reports
+            li.menu__item
+              a.menu__wrapper(href="#")
+                div.menu__icon
+                  i.fa.fa-briefcase(aria-hidden="true")
+                div.menu__text Customers
+            li.menu__item
+              a.menu__wrapper(href="#")
+                div.menu__icon
+                  i.fa.fa-calendar(aria-hidden="true")
+                div.menu__text Calendar
       div.content
-        header
-          div Header here
+        header.header
+          div.breadcrumbs
+            div.breadcrumbs__parent
+              span Customers
+            div.breadcrumbs__separator
+              i.fa.fa-chevron-right(aria-hidden="true")
+            div.breadcrumbs__child
+              span Max Jones
+
+          div.header_right-part Header tag here
         main
-          div Other content here
+          div Main tag here
