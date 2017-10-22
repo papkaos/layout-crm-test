@@ -1,5 +1,6 @@
 .menu__item {
   min-height: 55px;
+  border-left: 5px solid transparent;
 
   &:hover {
     border-left: 5px solid #ffc12d;

@@ -6,7 +6,6 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     title CRM test
-    link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic")
     link(rel="stylesheet", href="assets/app.css")
     script(src="https://use.fontawesome.com/9200e1cb11.js")
   body
@@ -27,7 +26,7 @@ html(lang="en")
                 div.menu__icon
                   i.fa.fa-pie-chart(aria-hidden="true")
                 div.menu__text Reports
-            li.menu__item
+            li.menu__item.menu__item_active
               a.menu__wrapper(href="#")
                 div.menu__icon
                   i.fa.fa-briefcase(aria-hidden="true")
@@ -57,6 +56,48 @@ html(lang="en")
             div.notification
               div.notification__icon
                 i.fa.fa-bell(aria-hidden="true")
-                div.notification__msg 4
+                div.notification__msg
+                  span 4
+
+            div.user-profile
+              div.user-profile__avatar
+                a(href="#")
+                  img.user-profile__img(src="assets/img/user-avatar.png")
+              div.user-profile__username
+                span Hello Lauren
         main
-          div Main tag here
+          div.customer
+            div.customer__info
+              div.customer__avatar
+                img.customer__img(src="assets/img/customer-avatar.png")
+              div.customer__details
+                div.customer__details-main
+                  div.customer__name
+                    span Max Jones
+                  div.customer__profile-type
+                    span Gold
+                  div.customer__category
+                    span Sales & Marketing
+                div.customer__details-more
+                  div.customer__contacts
+                    div.customer__phone
+                      div.customer__contact-label
+                        span Phone
+                      div.customer__contact-text
+                        span (+31) 140 175 468
+                    div.customer__address
+                      div.customer__contact-label
+                        span Address
+                      div.customer__contact-text
+                        span Binnenweg 50, Rotterdam
+                    div.customer__btn-create-quote
+                      a.no-link-decoration(href="#") Create Quote
+
+            div.customer__tabs
+              ul.customer__tabs-list
+                li.customer__tabs-item
+                  a.customer__tabs-link.no-link-decoration.customer_tab-active(href="#") Overview
+                li.customer__tabs-item
+                  a.customer__tabs-link.no-link-decoration(href="#") Orders
+                li.customer__tabs-item
+                  a.customer__tabs-link.no-link-decoration(href="#") Payments
