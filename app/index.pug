@@ -1,4 +1,4 @@
-extends layout/main
+extends templates/layout/main
 
 block content
   main
@@ -29,11 +29,4 @@ block content
               div.customer__btn-create-quote
                 a.no-link-decoration(href="#") Create Quote
 
-      div.tabs.tabs--mod-customer
-        ul.tabs__list
-          li.tabs__item
-            a.tabs__link.no-link-decoration.tabs--tab-active(href="#") Overview
-          li.tabs__item
-            a.tabs__link.no-link-decoration(href="#") Orders
-          li.tabs__item
-            a.tabs__link.no-link-decoration(href="#") Payments
+      include templates/blocks/tabs

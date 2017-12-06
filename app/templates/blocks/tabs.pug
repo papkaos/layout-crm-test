@@ -1,0 +1,13 @@
+include ../mixins/tab-item
+
+-
+  var tabs = [
+    { text: 'Overview', linkAttributes: {'class': 'tabs--tab-active'} },
+    { text: 'Orders' },
+    { text: 'Payments' }
+  ]
+
+div.tabs.tabs--mod-customer
+  ul.tabs__list
+    each tab in tabs
+      +tab-item(tab)

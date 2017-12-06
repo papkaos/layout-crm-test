@@ -68,18 +68,20 @@ body {
   float: left;
   background-color: #ffffff; }
 
+
 .sidebar {
   display: inline-table;
   width: 316px;
   float: left;
   background-color: #303841; }
 
-.customer {
-  padding: 60px 0 24px; }
 
 .header {
   height: 67px;
   border-bottom: 2px solid #f8f8f8; }
+
+.customer {
+  padding: 60px 0 24px; }
 
 .logo {
   padding-left: 25px;
@@ -119,6 +121,24 @@ body {
   min-height: 55px;
   border-bottom: 1px solid #3d444d;
   line-height: 55px; }
+
+.breadcrumbs {
+  float: left;
+  margin-left: 4%;
+  font-family: "Open Sans";
+  font-size: 16px;
+  padding-top: 27px; }
+
+.breadcrumbs__separator {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #4f4f4f; }
+
+.header__right-part {
+  float: right;
+  padding-top: 14px;
+  text-align: right; }
 
 .customer__img {
   width: 90px;
@@ -166,24 +186,6 @@ body {
   height: 6px;
   border-radius: 4px; }
 
-.breadcrumbs {
-  float: left;
-  margin-left: 4%;
-  font-family: "Open Sans";
-  font-size: 16px;
-  padding-top: 27px; }
-
-.breadcrumbs__separator {
-  display: inline-block;
-  padding: 0 15px;
-  font-size: 15px;
-  color: #4f4f4f; }
-
-.header__right-part {
-  float: right;
-  padding-top: 14px;
-  text-align: right; }
-
 .menu__item {
   min-height: 55px;
   border-left: 5px solid transparent; }
@@ -194,75 +196,6 @@ body {
 .menu__item--active {
   border-left: 5px solid #ffc12d;
   background-color: #442a9d; }
-
-.customer__category {
-  padding: 10px 0 20px;
-  font-size: 15px;
-  color: #999999; }
-
-.customer__details-main {
-  font-family: "Open Sans";
-  font-weight: bold;
-  border-bottom: 1px solid #f1f1f1; }
-
-.customer__name {
-  display: inline-block;
-  vertical-align: top;
-  padding-right: 18px;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #4f4f4f;
-  line-height: .8; }
-
-.customer__profile-type {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #ffc12d;
-  font-size: 11px;
-  color: #ffffff;
-  padding: 1px 7px;
-  border-radius: 4px;
-  text-transform: uppercase; }
-
-.customer__address {
-  display: inline-block;
-  width: 34%; }
-
-.customer__btn-create-quote {
-  display: inline-block;
-  padding-top: 8px;
-  vertical-align: top;
-  width: 32%;
-  text-align: right; }
-  .customer__btn-create-quote .no-link-decoration {
-    margin-right: 35px;
-    background-color: #303841;
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #ffc12d;
-    padding: 12px 25px;
-    border-radius: 4px; }
-
-.customer__contact-label {
-  font-size: 13px;
-  text-transform: uppercase;
-  color: #999999; }
-
-.customer__contact-text {
-  font-size: 15px;
-  color: #442a9d;
-  padding-top: 6px; }
-
-.customer__details-more {
-  font-family: "Open Sans";
-  font-weight: bold;
-  padding: 30px 0; }
-
-.customer__phone {
-  display: inline-block;
-  width: 34%; }
 
 .breadcrumbs__link {
   display: inline-block;
@@ -348,3 +281,72 @@ body {
   font-weight: bold;
   font-size: 16px;
   color: #4f4f4f; }
+
+.customer__category {
+  padding: 10px 0 20px;
+  font-size: 15px;
+  color: #999999; }
+
+.customer__details-main {
+  font-family: "Open Sans";
+  font-weight: bold;
+  border-bottom: 1px solid #f1f1f1; }
+
+.customer__name {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 18px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  line-height: .8; }
+
+.customer__profile-type {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffc12d;
+  font-size: 11px;
+  color: #ffffff;
+  padding: 1px 7px;
+  border-radius: 4px;
+  text-transform: uppercase; }
+
+.customer__address {
+  display: inline-block;
+  width: 34%; }
+
+.customer__btn-create-quote {
+  display: inline-block;
+  padding-top: 8px;
+  vertical-align: top;
+  width: 32%;
+  text-align: right; }
+  .customer__btn-create-quote .no-link-decoration {
+    margin-right: 35px;
+    background-color: #303841;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffc12d;
+    padding: 12px 25px;
+    border-radius: 4px; }
+
+.customer__contact-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #999999; }
+
+.customer__contact-text {
+  font-size: 15px;
+  color: #442a9d;
+  padding-top: 6px; }
+
+.customer__details-more {
+  font-family: "Open Sans";
+  font-weight: bold;
+  padding: 30px 0; }
+
+.customer__phone {
+  display: inline-block;
+  width: 34%; }
