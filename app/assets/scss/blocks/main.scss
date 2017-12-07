@@ -1,0 +1,22 @@
+html {
+  background-color: $background-color;
+}
+
+html, body, .container-wrapper, .sidebar {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container-wrapper {
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin: auto;
+}
+
+.no-link-decoration {
+  color: inherit;
+  text-decoration: none;
+}

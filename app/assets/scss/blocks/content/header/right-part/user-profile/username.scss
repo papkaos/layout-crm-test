@@ -1,0 +1,7 @@
+.user-profile__username {
+  display: inline-block;
+  margin-left: 10px;
+  @include open-sans-bold;
+  font-size: 16px;
+  color: #4f4f4f;
+}

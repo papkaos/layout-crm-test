@@ -1,9 +1,0 @@
-@import "../../mixins/fonts";
-
-.menu__text {
-  display: inline-block;
-  @include open-sans-light;
-  color: #fff;
-  text-decoration: none;
-  font-size: 17px;
-}

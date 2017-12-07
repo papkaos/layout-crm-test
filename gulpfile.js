@@ -11,7 +11,8 @@ var gulp = require('gulp'),
 
 var paths = {
     html: ['./app/**/*.pug', '!./bower_components/**/*'],
-    scss: ['./app/**/*.scss', '!./bower_components/**/*'],
+    scssAll: ['./app/**/*.scss', '!./bower_components/**/*'],
+    scss: ['./app/assets/scss/manifest.scss', '!./bower_components/**/*'],
     fonts: ['./app/assets/fonts/**/*.*'],
     img: ['./app/assets/img/**/*.*']
 };
@@ -29,7 +30,7 @@ gulp.task('html', function(){
 gulp.task('sass', function () {
     return gulp.src(paths.scss)
         .pipe(sass())
-        .pipe(concat('app.css'))
+        // .pipe(concat('app.css'))
         .pipe(gulp.dest('build/assets'));
 });
 
@@ -45,7 +46,7 @@ gulp.task('img', function(){
 
 gulp.task('watch', function() {
     gulp.watch(paths.html, ['html']);
-    gulp.watch(paths.scss, ['sass']);
+    gulp.watch(paths.scssAll, ['sass']);
 });
 
 gulp.task('build', ['html', 'sass', 'fonts', 'img']);
