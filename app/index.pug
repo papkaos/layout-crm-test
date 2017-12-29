@@ -2,31 +2,32 @@ extends templates/layout/main
 
 block content
   main
-    div.customer
-      div.customer__info
-        div.customer__avatar
-          img.customer__img(src="assets/img/customer-avatar.png")
-        div.customer__details
-          div.customer__details-main
-            div.customer__name
-              span Max Jones
-            div.customer__profile-type
-              span Gold
-            div.customer__category
-              span Sales & Marketing
-          div.customer__details-more
-            div.customer__contacts
-              div.customer__phone
-                div.customer__contact-label
-                  span Phone
-                div.customer__contact-text
-                  span (+31) 140 175 468
-              div.customer__address
-                div.customer__contact-label
-                  span Address
-                div.customer__contact-text
-                  span Binnenweg 50, Rotterdam
-              div.customer__btn-create-quote
-                a.no-link-decoration(href="#") Create Quote
+    div.fix-wrapper
+      div.customer
+        div.customer__info
+          div.customer__avatar
+            img.customer__img(src="assets/img/customer-avatar.png")
+          div.customer__details
+            div.customer__details-main
+              div.customer__name
+                span Max Jones
+              div.customer__profile-type
+                span Gold
+              div.customer__category
+                span Sales & Marketing
+            div.customer__details-more
+              div.customer__contacts
+                div.customer__phone
+                  div.customer__contact-label
+                    span Phone
+                  div.customer__contact-text
+                    span (+31) 140 175 468
+                div.customer__address
+                  div.customer__contact-label
+                    span Address
+                  div.customer__contact-text
+                    span Binnenweg 50, Rotterdam
+                div.customer__btn-create-quote
+                  a.no-link-decoration(href="#") Create Quote
 
       include templates/blocks/tabs

@@ -1,5 +1,8 @@
 .content {
-  width: calc(100% - 316px);
-  float: left;
+  //width: calc(100% - #{$sidebar-width});
+  width: 100%;
+  padding-left: $sidebar-width;
+  //float: left;
   background-color: $white;
+  box-sizing: border-box;
 }

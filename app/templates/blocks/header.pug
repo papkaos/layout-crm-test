@@ -1,18 +1,19 @@
 header.header
-  include header/breadcrumbs
+  div.fix-wrapper.clearfix
+    include header/breadcrumbs
 
-  div.header__right-part
-    include header/search-form
+    div.header__right-part
+      include header/search-form
 
-    div.notification
-      div.notification__icon
-        i.fa.fa-bell(aria-hidden="true")
-        div.notification__msg
-          span 4
+      div.notification
+        div.notification__icon
+          i.fa.fa-bell(aria-hidden="true")
+          div.notification__msg
+            span 4
 
-    div.user-profile
-      div.user-profile__avatar
-        a(href="#")
-          img.user-profile__img(src="assets/img/user-avatar.png")
-      div.user-profile__username
-        span Hello Lauren
+      div.user-profile
+        div.user-profile__avatar
+          a(href="#")
+            img.user-profile__img(src="assets/img/user-avatar.png")
+        div.user-profile__username
+          span Hello Lauren

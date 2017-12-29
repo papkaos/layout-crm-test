@@ -13,6 +13,7 @@ var paths = {
     html: ['./app/**/*.pug', '!./bower_components/**/*'],
     scssAll: ['./app/**/*.scss', '!./bower_components/**/*'],
     scss: ['./app/assets/scss/manifest.scss', '!./bower_components/**/*'],
+    css: ['./app/assets/css/*.css'],
     fonts: ['./app/assets/fonts/**/*.*'],
     img: ['./app/assets/img/**/*.*']
 };
@@ -34,6 +35,11 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('build/assets'));
 });
 
+gulp.task('css', function () {
+  return gulp.src(paths.css)
+      .pipe(gulp.dest('build/assets/css'));
+});
+
 gulp.task('fonts', function(){
     return gulp.src(paths.fonts)
         .pipe(gulp.dest('build/assets/fonts'))
@@ -49,6 +55,6 @@ gulp.task('watch', function() {
     gulp.watch(paths.scssAll, ['sass']);
 });
 
-gulp.task('build', ['html', 'sass', 'fonts', 'img']);
+gulp.task('build', ['html', 'sass', 'css', 'fonts', 'img']);
 
-gulp.task('default', ['watch', 'html', 'sass', 'fonts', 'img']);
+gulp.task('default', ['watch', 'html', 'sass', 'css', 'fonts', 'img']);
