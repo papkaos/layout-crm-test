@@ -1,6 +1,9 @@
 .user-profile__avatar {
-  display: inline-block;
-  vertical-align: middle;
+  //display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  //vertical-align: middle;
   width: 40px;
   height: 40px;
   border-radius: 50%;

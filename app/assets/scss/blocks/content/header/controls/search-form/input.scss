@@ -1,5 +1,6 @@
 .search-form__input {
   width: 100%;
+  box-sizing: border-box;
   height: 38px;
   padding: 0 40px 0 20px;
   @include open-sans;

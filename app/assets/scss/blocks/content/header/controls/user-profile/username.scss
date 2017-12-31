@@ -1,0 +1,11 @@
+.user-profile__username {
+  //display: inline-block;
+  //margin-left: 10px;
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  @include open-sans-bold;
+  font-size: 16px;
+  color: #4f4f4f;
+}
