@@ -1,0 +1,21 @@
+html {
+  background-color: $background-color;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.container-wrapper {
+  min-height: 100%;
+  height: auto !important;
+}
+
+.fix-wrapper {
+  padding-left: $fix-wrapper-padding;
+  padding-right: $fix-wrapper-padding;
+}

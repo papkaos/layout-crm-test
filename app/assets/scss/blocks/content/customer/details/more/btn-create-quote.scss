@@ -1,13 +1,10 @@
 .customer__btn-create-quote {
-  //display: inline-block;
   float: right;
   padding-top: 8px;
   vertical-align: top;
-  //width: 32%;
   text-align: right;
 
   .no-link-decoration {
-    //margin-right: 35px;
     background-color: $primary-color;
     @include open-sans-bold;
     font-size: 14px;

@@ -1,11 +1,9 @@
 .sidebar {
-  //display: inline-table;
   position: absolute;
   top: 0;
   left: 0;
   width: $sidebar-width;
   height: auto;
   min-height: 100%;
-  //float: left;
   background-color: $primary-color;
 }
