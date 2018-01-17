@@ -5,8 +5,8 @@
     left: 0;
     content: ".";
     font-size: 1px;
-    background-color: #442a9d;
-    color: #442a9d;
+    background-color: $text-accent-color;
+    color: $text-accent-color;
     display: block;
     width: 100%;
     height: 6px;
@@ -14,6 +14,6 @@
   }
 }
 
-.tabs--mod-customer {
+.tabs--customer {
   margin-top: 70px;
 }

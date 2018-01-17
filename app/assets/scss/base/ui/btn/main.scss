@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  background-color: $primary-color;
+  @include open-sans-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffc12d;
+  padding: 10px 25px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+
+  &.btn--customer {
+    float: right;
+  }
+
+}

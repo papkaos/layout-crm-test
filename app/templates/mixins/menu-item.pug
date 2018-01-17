@@ -1,6 +1,6 @@
 mixin menu-item(itemData)
   li.menu__item&attributes(itemData.itemAttributes)
-    a.menu__wrapper(href="#")
+    a.menu__wrapper.no-link-decoration(href="#")
       div.menu__icon
         i(class=itemData.icon aria-hidden="true")
       div.menu__text= itemData.text
