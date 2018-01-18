@@ -7,7 +7,7 @@ include ../mixins/tab-item
     { text: 'Payments' }
   ]
 
-div.tabs.tabs--customer
+div.tabs.tabs--customer.fix-wrapper--right
   ul.tabs__list
     each tab in tabs
       +tab-item(tab)

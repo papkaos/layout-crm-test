@@ -18,4 +18,13 @@ body {
 .fix-wrapper {
   padding-left: $fix-wrapper-padding;
   padding-right: $fix-wrapper-padding;
+
+  &.fix-wrapper--customer {
+    padding-right: 0;
+  }
+
+  .fix-wrapper--right {
+    padding-right: $fix-wrapper-padding;
+  }
+
 }

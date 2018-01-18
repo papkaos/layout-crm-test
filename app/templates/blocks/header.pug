@@ -5,15 +5,6 @@ header.header
     div.header__controls
       include header/search-form
 
-      div.notification
-        div.notification__icon
-          i.fa.fa-bell(aria-hidden="true")
-          div.notification__msg
-            span 4
+      include header/notification
 
-      div.user-menu
-        div.user-menu__avatar
-          a(href="#")
-            img.user-menu__img(src="assets/img/user-avatar.png")
-        div.user-menu__username
-          span Hello Lauren
+      include header/user-menu
