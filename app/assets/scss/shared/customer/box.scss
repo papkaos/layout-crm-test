@@ -1,12 +1,11 @@
 .customer__box {
   @include open-sans-bold;
+}
 
-  &.customer__box--border {
-    border-bottom: 1px solid #f1f1f1;
-  }
+.customer__box--border {
+  border-bottom: 1px solid #f1f1f1;
+}
 
-  &.customer__box--padding {
-    padding-top: 30px;
-  }
-
+.customer__box--padding {
+  padding-top: 30px;
 }
